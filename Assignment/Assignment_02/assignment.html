@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop With Me</title>
+    <link rel="stylesheet" href="assignment.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <h1>Shop With Me</h1>
+        <a href="#">Account</a>
+        <div class="items-dropdown">
+            <h3>Items</h3>
+            <ul class="dropdown-menu1">
+                <li><a href="#">Fruit salad</a></li>
+                <li><a href="#">Milk Shake</a></li>
+                <li><a href="#">Coffee</a></li>
+            </ul>
+        </div>
+        
+        <div class="offer-dropdown">
+            <h3>Offer</h3>
+            <ul class="dropdown-menu2">
+                <li><a href="#">Fast food</a></li>
+                <li><a href="#">Cake item</a></li>
+                <li><a href="#">Drink item</a></li>
+                <li><a href="#">Coffee</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <input type="text" placeholder="Type your item" />
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-cart-shopping" id="cartIcon"><sub id="cart-count">0</sub></i>
+        </div>
+    </nav>
+
+    <section class="backgroundImage">
+         <img src="https://www.seniorlivingforesight.net/wp-content/uploads/2022/06/34613104_m.jpg" class="offer-img" alt="Special Offer" />
+         <button class="oferButton" onclick="window.location.href='offer.html'"><h3>Order</h3></button>
+</section>
+
+    <section id="section1"></section>
+
+    <aside id="cartSidebar">
+         <div class="cart-header">
+             <h2>Cart</h2>
+             <button class="close-btn" onclick="closeCart()">✖</button>
+         </div>
+         <ul id="cartItems"></ul>
+         <h3>Total: $<span id="totalAmount">0.00</span></h3>
+    </aside>
+
+    <footer class="footer">
+        <div>
+            <p class="footerText">
+                <a href="https://github.com/Tttasnim/web_engineering_lab" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> Tttasnim
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="assignment.js"></script>
+</body>
+</html>
